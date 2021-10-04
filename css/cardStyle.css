@@ -1,0 +1,73 @@
+@media (max-width: 1100px) {
+    .discText{
+        text-align: justify;
+        font-size: 60%;
+      }
+}
+/* Estilos para o Card externo */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: table;
+    top: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+/* Estilos para o Card interno dos lanches. 2 Para controlar o alinhamento direito-esquerdo */
+.smallCard {
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 49%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    box-sizing: border-box;
+    height: auto;
+}
+.smallCard2 {
+    float: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 49%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    box-sizing: border-box;
+}
+/* Estilos para a imagem do Card */
+.menuImagem{
+    width: 25%;
+    margin: 0;
+    float: left;
+}
+/* Estilos para a  descrição no Card */
+.descricao{
+    padding: 0;
+    text-align: center;
+    margin-top: auto;
+    vertical-align: top;
+}
+h2:only-child{
+    color: #991717;
+    margin: auto;
+    margin-top: auto;
+}
+h1{
+    color: #991717;
+    text-align: center;
+}
+/* Estilos para o texto interno da discrição */
+.discText{
+  text-align: justify;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+

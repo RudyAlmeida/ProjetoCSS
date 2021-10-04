@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulk's Burguer</title>
+    <!-- Links para o CSS externo -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/carrousel.css" />
+
+</head>
+
+<body>
+    <header>
+        <!-- Cabeçalho com uma imagens e 2 listas para formatar os menus. -->
+        <div class="flexContainer">
+            <div id="divCenter"> <img src="imagens/hulk.gif" alt="Logo da Hulk's Burguer">
+                <!-- Lid separado a da outra lista para posicionamento -->
+                <div id="barra">
+                    <ul>
+                        <li>
+                            Login
+                        </li>
+                        <li>
+                            Registre-se
+                        </li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul>
+                        <li id="home"><a href="index.html">Home </a></li>
+                        <li id="cardapio"><a href="pagina2.html">Cardapio </a></li>
+                        <li id="contato"><a href="pagina3.html">Pedido </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Seção principal do site, dividida em partes -->
+    <main>
+        <section id="mainSection">
+            <h1>Hulk's Burguer - Esmagando sua fome.</h1>
+            <div class="card">
+                <div class="smallCard">
+                    <div><img src="imagens/cap.jpg" class="menuImagem" alt="Hamburguer insperado no capitão America"></div>
+                    <div class="descricao">
+                        <div>
+                            <h2>Super Promoção da Semana</h2>
+                            <h3>Capitão América</h3>
+                        </div>
+                        <div class="discText">Forte e Parrudo! 2 Bifés de hamburguer feitos com nosso blend
+                            especial,
+                            queijo cheddar, queijo mussarela, bacon, 2 ovos, alface, tomate e batata palha.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="textIndex">Bem vindo a lanchonete Hulk's Burguer. A lanchonete especialista em esmagar a sua
+                fome. Na nossa lanchonete quem manda é você, monte seu lanche personalizado de acordo com a sua fome!
+                Aqui nós somos os hérois, mas quem manda é você</div>
+            <div class="textIndex">Ser héroi solo é legal! Mas trabalhar em equipe é melhor ainda, por isso Hulk
+                convidou seus amigos vingadores para se juntarem a ele na Hulk's Burguer, visite nosso cardapio e
+                conheço os lanches personalizados dos Vingadores. </div>
+            <div class="textIndex">Estamos sempre pensando em você, conheça nosso cartão fidelidade.
+                <a class="button" href="#popup1">Conheça agora.</a>
+            </div>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Conheça nosso cartão fidelidade.</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        A cada 10 lanches comprados você ganha um gratis. E o melhor, você não precisa se preocupar,
+                        nosso sitema controla pra você.
+                        <div><img src="imagens/fidelidade.jpg" alt="Cartão Fidelidade da Hulk's Burguer"></div>
+                    </div>
+                </div>
+
+            </div>
+            <h3 id="h3Slider">Conheça nossos produtos:</h3>
+            <div class="sliderClass">
+                
+                <input type="radio" name="select" id="slide_1" checked>
+                <input type="radio" name="select" id="slide_2">
+                <input type="radio" name="select" id="slide_3">
+                <input type="radio" name="select" id="slide_4">
+                <input type="checkbox" id="slideImg">
+
+                <div class="slider">
+                    <label for="slide_1" class="slide slide_1"></label>
+                    <label for="slide_2" class="slide slide_2"></label>
+                    <label for="slide_3" class="slide slide_3"></label>
+                    <label for="slide_4" class="slide slide_4"></label>
+                </div>
+
+                <div class="inner_part">
+                    <label for="slideImg" class="img">
+                        <img class="img_1" src="imagens/macaverde.jpg" alt="TNT Sabor Maça Verde">
+                    </label>
+                </div>
+
+                <div class="inner_part">
+                    <label for="slideImg" class="img">
+                        <img class="img_2" src="imagens/original.jpg" alt="TNT Sabor Original">
+                    </label>
+                </div>
+
+                <div class="inner_part">
+                    <label for="slideImg" class="img">
+                        <img class="img_3" src="imagens/acai.jfif" alt="TNT Sabor Açai com Guarána">
+                    </label>
+                </div>
+                <div class="inner_part">
+                    <label for="slideImg" class="img">
+                        <img class="img_4" src="imagens/tnttangerina.jpg" alt="TNT Sabor Tangerina">
+                    </label>
+                </div>
+            </div>
+
+        </section>
+        <!-- Aside com os parceiros -->
+        <aside>
+            <h3 id="asideH3">Parceiros:</h3>
+            <img src="imagens/tnt.png" alt="Logo TNT">
+            <img src="imagens/grupopetropolis.jfif" alt="Logo Grupo Petropolis">
+            <img src="imagens/soulcode.jfif" alt="Logo SoulCode">
+            <img src="imagens/coca.png" alt="Logo Coca-Cola">
+            <img src="imagens/pepsi-logo-vertical.png" alt="Logo Pepsi">
+        </aside>
+    </main>
+    <!-- Footer com as informações basicas e links para as redes sociais -->
+    <footer>
+        <address>Rua Procelaria N91
+            São Conrado Vila Velha - ES
+            Tel:(27)99699-8347
+        </address>
+        <section id="sectionFooter">
+            <section>@Todos os direitos reservados. Hulk's Burguer</section>
+            <section>Desenvolvido por Rodolpho Almeida</section>
+        </section>
+        <div id="navFooter">
+            <div><a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram-logo.png" alt="Logo Instagram"></a></div>
+            <div><a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png" alt="Logo Facebook"></a></div>
+            <div><a href="https://twitter.com/home" target="_blank"><img src="imagens/twitter.png" alt="Logo Twitter"></a></div>
+        </div>
+    </footer>
+</body>
+
+</html>

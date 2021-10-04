@@ -1,0 +1,188 @@
+/* Flex Container para organizar o Header*/
+.flexContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box; 
+    height: auto;  
+}
+body{
+    background-image: url(../imagens/4486964.jpg);
+}
+/* Controles de media para responsividade */
+ @media  (max-width: 650px) {
+    #divCenter{
+        transform: scaleX(1);
+    }
+    header {
+        transform: scaleX(1);
+    }
+    ul{
+        font-size: 25%;
+    }
+    nav{
+        padding-top: 13px;
+    }
+    #sectionFooter{
+        font-size: 50%;
+    }
+    address{
+        font-size: 50%;
+    }
+    footer{
+        transform: scaleY(1);
+    }
+    main{
+        transform: scaleX(1);
+    }
+    #mainSection {
+        transform: scaleY(1);
+        font-size: 50%;
+    }
+    h2{
+        font-size: 50%;
+    }
+}
+body{
+    width: 80%;
+    margin: auto;
+}
+/* Controles da Div de dentro do header, incluindo a imagem*/
+#divCenter{
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+}
+#divCenter img{
+    width: 100%;
+    height: auto;
+
+}
+/* Contorles da barra com o menu superior de login e registro */
+div#barra{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* Contorles da barra com o menu inferior com o menu */
+nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: auto;
+    flex-direction: column;
+    transform: translateY(+100%);
+    position: absolute;
+    bottom: 23px;
+}
+a {
+    color: honeydew;
+    font-weight: bolder;
+    text-decoration: none;
+}
+/* Estilos para a Li para colocar o fundo de tijolos */
+li{
+    display: inline-table;
+    color: honeydew;
+    font-weight: bolder;
+    padding-right: 10px;
+    transition-duration: 0.4s;
+    padding-left: 10px;
+    background-image: url(../imagens/tijolo.jpg);
+    background-size: cover;
+}
+a:hover {
+    color: black;
+    font-weight: bolder;
+  }
+ul{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    box-sizing: border-box;
+}
+main{
+    background-color: white;
+    height: auto;
+    display: flex;
+    margin-top:-10px;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Estilo da area central */
+#mainSection{
+    background-color: rgb(241, 245, 220);
+    height: auto;
+    width: 80%;
+    padding-top: 20px;
+    top: 0;
+}
+h3{
+    padding-bottom: 20px;
+}
+/* Estilos para o Aside */
+aside{
+    padding-top: 2%;
+    background-color: rgb(16, 61, 4);
+    height: auto;
+    display: flex;
+    width: 20%;
+    display: list-item;
+    list-style:none ;
+    padding-left: 05%;
+    box-sizing: border-box;
+}
+aside img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 15%;
+}
+#asideH3{
+    margin: 0;
+    color: blanchedalmond;
+}
+/* Estilos para o footer */
+footer{
+    background-color: #e1be2e;
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+}
+address{
+    padding-left: 10px;
+    display: flex;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+
+}
+#sectionFooter{
+    width: 40%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+
+}
+#navFooter{
+    margin: auto;
+    width: 20%;
+    height: auto;
+    text-align: right;
+    box-sizing: border-box;
+    display: list-item;
+    list-style:none ;
+}
+#navFooter img{
+    width: 10%;
+    height: auto;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulk's Burguer</title>
+    <!-- Links para o CSS externo -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/formStyle.css" />
+</head>
+
+<body>
+    <header>
+<!-- Cabeçalho com uma imagens e 2 listas para formatar os menus. -->
+        <div class="flexContainer">
+            <div id="divCenter"> <img src="imagens/hulk.gif" alt="Logo Hulk's Burguer">
+                <!-- Lid separado a da outra lista para posicionamento -->
+                <div id="barra">
+                    <ul>
+                        <li>
+                            Login
+                        </li>
+                        <li>
+                            Registre-se
+                        </li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul>
+                        <li id="home"><a href="index.html">Home </a></li>
+                        <li id="cardapio"><a href="pagina2.html">Cardapio </a></li>
+                        <li id="contato"><a href="pagina3.html">Pedido </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Seção principal do site, dividida em partes -->
+    <main>
+        <section id="mainSection">
+            <div class="card">
+                <div class="card">
+                    <h1>Hora de esmagar a sua fome!</h1>
+                    <!-- Formulario a ser melhorado com Java Script e BootStrap -->
+                    <form>
+                        <h2>Complete seu cadastro e faça seu pedido.</h2>
+                        <div class="card">
+                                <p><h3>Cadastro</h3></p>
+                                <p>
+                                    <label for="nome">Nome: </label>
+                                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+                                </p>
+                                <p>
+                                    <label for="email">E-mail: </label>
+                                    <input type="email" id="email" placeholder="Digite seu e-mail">
+                                </p>
+                                <p>
+                                    <label for="tel">Telefone: </label>
+                                    <input type="tel" id="tel" placeholder="Digite seu telefone">
+                                </p>
+                                <p>
+                                    <label for="date">Data de nascimento:</label>
+                                    <input type="date" id="date">
+                                </p>
+                                <p>
+                                    <label for="estado">Estado:</label>
+                                    <select id="estado" name="estado">
+                                        <option> Selecione o Estado</option>
+                                        <option value=" AC "> Acre </option>
+                                        <option value=" AL "> Alagoas </option>
+                                        <option value=" AP "> Amapá </option>
+                                        <option value=" AM "> Amazonas </option>
+                                        <option value=" BA "> Bahia </option>
+                                        <option value=" CE "> Ceará </option>
+                                        <option value=" DF "> Distrito Federal </option>
+                                        <option value=" ES "> Espírito Santo </option>
+                                        <option value=" GO "> Goiás </option>
+                                        <option value=" MA "> Maranhão </optio>
+                                        <option value=" MT "> Mato Grosso </option>
+                                        <option value=" MS "> Mato Grosso do Sul </option>
+                                        <option value=" MG "> Minas Gerais </option>
+                                        <option value=" PA "> Pará </option>
+                                        <option value=" PB "> Paraíba </option>
+                                        <option value=" PR "> Paraná </option>
+                                        <option value=" PE "> Pernambuco </option>
+                                        <option value=" PI "> Piauí </option>
+                                        <option value=" RJ "> Rio de Janeiro </option>
+                                        <option value=" RN "> Rio Grande do Norte </option>
+                                        <option value=" RS "> Rio Grande do Sul </option>
+                                        <option value=" RO "> Rondônia </option>
+                                        <option value=" RR "> Roraima </option>
+                                        <option value=" SC "> Santa Catarina </option>
+                                        <option value=" SP "> São Paulo </option>
+                                        <option value=" SE "> Sergipe </option>
+                                        <option value=" TO "> Tocantins </option>
+    
+                                    </select>
+                                </p>
+                                <p>
+                                    <!-- Futuramente substituir pelo api do IBGE -->
+                                    <label for="cidade">Cidade: </label>
+                                    <input type="text" id="cidade" placeholder="Digite sua cidade">
+                                </p>
+                                <p>
+                                    <!-- Futuramente substituir pelo api do IBGE -->
+                                    <label for="rua">Rua e Número: </label>
+                                    <input type="text" id="rua" placeholder="Digite sua rua e número">
+                                </p>
+                                <p>
+                                    <!-- Futuramente substituir pelo api do IBGE -->
+                                    <label for="bairro">Bairro: </label>
+                                    <input type="text" id="bairro" placeholder="Digite seu bairro">
+                                </p>
+                            </div>
+                            <div class="card">
+                                <h3>Seu pedido:</h3>
+                                <div class="card">
+                                    <!-- no futuro adicionar a possibilidade de escolher mais de uma mas com taxa extra, adicionar tambem campo para quantidade.-->
+                                    <h3>Escolha sua carne:</h3>
+                                    <p>
+                                        <label>Frango</label>
+                                        <input type="radio" id="carne1" name="carne" value="frango">
+                                        <label>Hamburgues Tradicional</label>
+                                        <input type="radio" id="carne2" name="carne" value="tradicional">
+                                        <label>Hamburguer de Costela</label>
+                                        <input type="radio" id="carne3" name="carne" value="costela">
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <!-- no futuro adicionar a possibilidade de escolher mais de uma mas com taxa extra, adicionar tambem campo para quantidade.-->
+                                    <h3>Escolha seu queijo:</h3>
+                                    <p>
+                                        <label>Cheddar</label>
+                                        <input type="radio" id="queijo1" name="queijo" value="cheddar">
+                                        <label>Mussarela</label>
+                                        <input type="radio" id="queijo2" name="queijo" value="mussarela">
+                                        <label>Prato</label>
+                                        <input type="radio" id="queijo3" name="queijo" value="prato">
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <!-- no futuro adicionar campo para quantidade, com cobrança dos extras. -->
+                                    <h3>Segunda opção de proteina:</h3>
+                                    <p>
+                                        <label>Bacon</label>
+                                        <input type="checkbox" id="proteina1" name="proteina" value="bacon">
+                                        <label>Ovo</label>
+                                        <input type="checkbox" id="proteina2" name="proteina" value="ovo">
+                                        <label>Presunto</label>
+                                        <input type="checkbox" id="proteina3" name="proteina" value="presunto">
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <!-- no futuro adicionar campo para quantidade, com cobrança dos extras. -->
+                                    <h3>Segunda opção de proteina:</h3>
+                                    <p>
+                                        <label>Tomate</label>
+                                        <input type="checkbox" id="salada1" name="salada" value="tomate">
+                                        <label>Alface</label>
+                                        <input type="checkbox" id="salada2" name="salada" value="ovo">
+                                        <label>Cenoura Ralada</label>
+                                        <input type="checkbox" id="salada3" name="salada" value="cenoura">
+                                        <label>Salda de Maionese</label>
+                                        <input type="checkbox" id="salada4" name="salada" value="maionese">
+                                        <label>Batata Palha</label>
+                                        <input type="checkbox" id="salada5" name="salada" value="palha">
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <!-- no futuro adicionar a possibilidade de escolher mais de uma mas com taxa extra, adicionar tambem campo para quantidade.-->
+                                    <h3>Escolha sua carne:</h3>
+                                    <p>
+                                        <label>Coca-cola</label>
+                                        <input type="radio" id="bebida1" name="bebida" value="coca">
+                                        <label>Guaraná</label>
+                                        <input type="radio" id="bebida2" name="bebida" value="guarana">
+                                        <label>Fanta Laranja</label>
+                                        <input type="radio" id="bebida3" name="bebida" value="laranja">
+                                        <label>Fanta Uva</label>
+                                        <input type="radio" id="bebida4" name="bebida" value="uva">
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <h3>Comentarios:</h3>
+                                    <textarea></textarea>
+                                    <p>
+                                        <button type="submit">Enviar</button>
+                                        <button type="reset">Limpar</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Aside com os parceiros -->
+        <aside>
+            <h3 id="asideH3">Parceiros:</h3>
+            <img src="imagens/tnt.png" alt="Logo TNT">
+            <img src="imagens/grupopetropolis.jfif" alt="Logo Grupo Petropolis">
+            <img src="imagens/soulcode.jfif" alt="Logo SoulCode">
+            <img src="imagens/coca.png" alt="Logo Coca-Cola">
+            <img src="imagens/pepsi-logo-vertical.png" alt="Logo Pepsi">
+        </aside>
+    </main>
+    <!-- Footer com as informações basicas e links para as redes sociais -->
+    <footer>
+        <address>Rua Procelaria N91
+            São Conrado Vila Velha - ES
+            Tel:(27)99699-8347
+        </address>
+        <section id="sectionFooter">
+            <section>@Todos os direitos reservados. Hulk's Burguer</section>
+            <section>Desenvolvido por Rodolpho Almeida</section>
+        </section>
+        <div id="navFooter">
+            <div><a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram-logo.png" alt="Logo Instagram"></a></div>
+            <div><a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png" alt="Logo Facebook"></a></div>
+            <div><a href="https://twitter.com/home" target="_blank"><img src="imagens/twitter.png" alt="Logo Twitter"></a></div>
+        </div>
+    </footer>
+</body>
+
+</html>

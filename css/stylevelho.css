@@ -1,0 +1,129 @@
+/* personalização para o header. Margin 0 para ocupar a pagina inteira. */ 
+body{
+    background-image: url(../imagens/4486964.jpg);
+}
+@media (max-width: 650px){
+    .flex-container{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 85%;
+        border-style: dashed;
+        border-color: tomato;
+        margin: auto;
+    }
+}
+@media (max-width: 650px){
+    div#cabecalho{
+        display: flex;
+        flex-wrap: nowrap;
+        float: left;
+        font-size: 10px;
+        color: #db6607;
+        background-color: honeydew;
+        width:60%;
+        height: 80px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 650px){
+    div#divLogo{
+        display: flex;
+        flex-wrap: nowrap;
+        border-style: dotted;
+        border-color: yellow;
+        box-sizing: border-box;
+        height: 40px;
+        width: 40px;
+        background-image: url(../imagens/logo.gif);
+        background-size: cover;
+        border-radius:50%;
+        box-shadow: 1px 1px 6px 6px yellow;
+        float: left;
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    border-style: dashed;
+    border-color: tomato;
+    margin: auto;
+}
+
+.flex-item{
+    margin:0px;
+    justify-content: center;
+    align-content: center;
+}
+header{
+    width: 100%;
+    height: 120px;
+    /* padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px; */
+    box-sizing: border-box;
+    margin: 0;
+    }
+div#barra{
+    background-color: #db6607;
+    margin: 0;
+    width: 100%;
+    height: 20px;
+}
+div#divLogo{
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    background-image: url(../imagens/logo.gif);
+    background-size: cover;
+    border-radius:100%;
+    box-shadow: 1px 1px 6px 6px red;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+div#cabecalho{
+    margin-left: 20px;
+    width:80%;
+    height: 80px;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    color: #db6607;
+}
+div#mainNav{
+    background-color: #db6607;
+    margin: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    clear: inherit;
+}
+li{
+    display: inline-table;
+    color: honeydew;
+    font-weight: bolder;
+}
+ul#mainNav{
+    background-color: #db6607;
+    margin: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+ul#topNav{
+    background-color: #db6607;
+    margin: 0;
+    width: 100%;
+    height: 20px;
+    text-align: right;
+    box-sizing: border-box;
+}
