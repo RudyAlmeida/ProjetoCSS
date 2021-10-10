@@ -79,26 +79,28 @@ nav{
     flex-direction: column;
     transform: translateY(+100%);
     position: absolute;
-    bottom: 23px;
+    bottom: 45px;
 }
 a {
-    color: honeydew;
+    color: rgb(3, 68, 3);
     font-weight: bolder;
     text-decoration: none;
+    font-family:cursive;
 }
 /* Estilos para a Li para colocar o fundo de tijolos */
 li{
     display: inline-table;
-    color: honeydew;
+    /* color: rgb(2, 37, 2); */
     font-weight: bolder;
+    font-size: 200%;
     padding-right: 10px;
     transition-duration: 0.4s;
     padding-left: 10px;
-    background-image: url(../imagens/tijolo.jpg);
+    /* background-image: url(../imagens/tijolo.jpg); */
     background-size: cover;
 }
 a:hover {
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
   }
 ul{

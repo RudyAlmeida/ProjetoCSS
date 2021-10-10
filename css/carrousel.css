@@ -12,7 +12,7 @@
     margin-left: 100px;
   }
   /* Parte interna do slider*/
-  .sliderClass .inner_part {
+  .sliderClass .parteInterna {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,12 +21,12 @@
     position: absolute;
   }
    /* Parte do check do slider*/
-  #slideImg:checked ~ .inner_part {
+  #slideImg:checked ~ .parteInterna {
     padding: 0;
     transition: .1s ease-in;
   }
    /* Tratamento da imagem da parte interna*/
-  .inner_part .img {
+  .parteInterna .img {
     height: 260px;
     width: 260px;
     overflow: hidden;
@@ -35,7 +35,7 @@
     box-shadow: 0 10px 50px rgba(0,0,0,0.2);
   }
    /* Tratamento do checked */
-  #slideImg:checked ~ .inner_part .img {
+  #slideImg:checked ~ .parteInterna .img {
    height: 350px;
    width: 300px;
    z-index: 99;
@@ -50,10 +50,10 @@
     transition: .6s;
   }
   /* Tratamento da transição ao clicar */
-  #slide_1:checked ~ .inner_part .img_1,
-  #slide_2:checked ~ .inner_part .img_2,
-  #slide_3:checked ~ .inner_part .img_3,
-  #slide_4:checked ~ .inner_part .img_4 {
+  #slide_1:checked ~ .parteInterna .img_1,
+  #slide_2:checked ~ .parteInterna .img_2,
+  #slide_3:checked ~ .parteInterna .img_3,
+  #slide_4:checked ~ .parteInterna .img_4 {
     opacity: 1;
     transition-delay: .2s;
   }
