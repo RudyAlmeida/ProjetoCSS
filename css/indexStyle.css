@@ -1,138 +1,322 @@
 /* configurações do cabeçalho*/
-h1{
-    color: #991717;
-    margin: auto;
-    margin-top: auto;
-    text-align: center;
-}/* configurações do cartão interno, pequeno*/
+
+h1 {
+  color: #991717;
+  margin: auto;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* configurações do cartão interno, pequeno*/
+
 .smallCard {
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 95%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: auto;
-    box-sizing: border-box;
-    height: auto;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 95%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  height: auto;
 }
+
 /* configurações do cartão externo, grande*/
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: table;
-    top: 0;
-    box-sizing: border-box;
-    font-size: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: table;
+  top: 0;
+  box-sizing: border-box;
+  font-size: 100%;
 }
+
 /* configurações da imagem dentro do cartão*/
-.menuImagem{
-    width: 15%;
-    margin: 0;
-    float: left;
+
+.menuImagem {
+  width: 15%;
+  margin: 0;
+  float: left;
 }
+
 /* configurações do texto de descrição dentro do cartão*/
-.descricao{
-    padding: 0;
-    text-align: center;
-    margin-top: auto;
-    vertical-align: top;
+
+.descricao {
+  padding: 0;
+  text-align: center;
+  margin-top: auto;
+  vertical-align: top;
 }
+
 /* configurações dos cabeçalhos */
-h2, h3{
-    color: #991717;
-    margin: auto;
-    margin-top: auto;
+
+h2, h3 {
+  color: #991717;
+  margin: auto;
+  margin-top: auto;
 }
+
 /* configurações dos textos */
-.textIndex{
-    text-align: justify;
-    padding: 20px;
-    color: #991717;
-    font-size: 120%;
+
+.textIndex {
+  text-align: justify;
+  padding: 20px;
+  color: #991717;
+  font-size: 120%;
 }
+
 /*botão para contralar o popup*/
+
 .button {
-    font-size: 1em;
+  font-size: 1em;
+  padding: 10px;
+  
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-color: #991717;
+  margin: auto;
+}
+#divButton{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 03%;
+}
+
+.button:hover {
+  background: #06D85F;
+}
+
+/* overlay para esconder o popup*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* overlay para trazer o popup*/
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* configurações gerais do popup*/
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color: #991717;
+}
+
+/* configurações da imagem do popup*/
+
+.popup img {
+  padding-top: 20px;
+  width: 40%;
+  height: auto;
+}
+
+/* configurações do cabeçalho do popup*/
+
+.popup h2 {
+  margin-top: 0;
+  color: #991717;
+  font-family: Tahoma, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* controle de abertura e fechamento do popup*/
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/* Controles do slide na pagina inicial, ainda não estou satisfeito com o resultado, melhorias a serem feitas, tinha feito 100% com CSS, posso melhorar com JS*/
+@keyframes slidy {
+  0% {
+      left: 0%;
+  }
+  20% {
+      left: 0%;
+  }
+  25% {
+      left: -100%;
+  }
+  45% {
+      left: -100%;
+  }
+  50% {
+      left: -200%;
+  }
+  70% {
+      left: -200%;
+  }
+  75% {
+      left: -300%;
+  }
+  95% {
+      left: -300%;
+  }
+  100% {
+      left: -400%;
+  }
+}
+div#slider {
+  overflow: hidden;
+  width: 40%;
+  margin: auto;
+}
+div#slider figure img {
+  width: 10%;
+  float: left;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+/* media para controle do popup*/
+
+@media screen and (max-width: 1430px) {
+  .popup {
+    width: 70%;
+  }
+  .button {
+    font-size: 0.75em;
     padding: 10px;
     color: #fff;
-    border: 2px solid #06D85F;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color: #991717;
+    ;
+  }
+}
+/* Problema recorrente nas minhas folhas de estilo, ainda com problemas de responsividade, trocendo que o BootStrap facilite isso um pouco, com certeza é minha maior dificuldade no momento.*/
+@media screen and (max-width: 1120px) {
+  .popup {
+    width: 70%;
+  }
+  .button {
+    font-size: 0.5em;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color: #991717;
+    ;
+  }
+}
+
+@media (max-width: 700px) {
+  .button {
+    font-size: 25%;
+    color: #fff;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    background-color: #991717;;
+    background-color: #991717;
+    width: 20%;
+    position: relative;
+    margin: auto;
+    display: block;
+    text-align: center;
   }
-  .button:hover {
-    background: #06D85F;
+}
+@media (max-width: 450px) {
+  .button {
+    font-size: 15%;
+    color: #fff;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color: #991717;
+    width: 20%;
+    position: relative;
+    margin: auto;
+    display: block;
+    text-align: center;
   }
-  /* overlay para esconder o popup*/
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
+  .textIndex {
+    text-align: justify;
+    padding: 10px;
+    color: #991717;
+    font-size: 120%;
   }
-  /* overlay para trazer o popup*/
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
+  .discText {
+    display: flex;
+    margin-top: -08%;
   }
-  /* configurações gerais do popup*/
-  .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
+}
+@media (max-width: 350px) {
+  .button {
+    font-size: 15%;
+    color: #fff;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color: #991717;
     width: 30%;
     position: relative;
-    transition: all 5s ease-in-out;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+  .textIndex {
+    text-align: justify;
+    padding: 10px;
     color: #991717;
+    font-size: 120%;
   }
-  /* configurações da imagem do popup*/
-  .popup img {
-      padding-top: 20px;
-      width: 40%;
-      height: auto;
+  .discText {
+    display: flex;
+    margin-top: -08%;
   }
-/* configurações do cabeçalho do popup*/
-  .popup h2 {
-    margin-top: 0;
-    color: #991717;
-    font-family: Tahoma, Arial, sans-serif;
-    margin-bottom: 20px;
-  }
-  /* controle de abertura e fechamento do popup*/
-  .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  .popup .close:hover {
-    color: #06D85F;
-  }
-  .popup .content {
-    max-height: 30%;
-    overflow: auto;
-  }
-  /* media para controle do popup*/
-  @media screen and (max-width: 700px){
-    .popup{
-      width: 70%;
-    }
-  }
+}

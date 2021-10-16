@@ -9,9 +9,10 @@
     <!-- Links para o CSS externo -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/cardStyle.css" />
+    <script src="js/script.js"></script>
 </head>
 
-<body>
+<body onload="makeList()">
     <header>
 <!-- Cabeçalho com uma imagens e 2 listas para formatar os menus. -->
         <div class="flexContainer">
@@ -20,10 +21,10 @@
                 <div id="barra">
                     <ul>
                         <li>
-                            Login
+                            <a href="index.html"> Login</a>
                         </li>
                         <li>
-                            Registre-se
+                            <a href="index.html">Registre-se</a>
                         </li>
                     </ul>
                 </div>
@@ -40,112 +41,11 @@
     <!-- Seção principal do site, dividida em partes -->
     <main>
         <section id="mainSection">
+            <a href="index.html"><img src="imagens/kart.png" id="kart"></a>
             <h1>Cardapio:</h1>
             <!-- Cartões para montar o menu, foram feitos 2 cartões diferentes para facilitar o alinhamento esquerdo-direito -->
-            <div class="card">
-                <div class="smallCard">
-                    <div><img src="imagens/cap.jpg" class="menuImagem" alt="Hamburguer inspirado no Capitão América"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>Capitão América</h2>
-                        </div>
-                        <div class="discText">Forte e Parrudo! 2 Bifés de hamburguer feitos com nosso blend
-                            especial,
-                            queijo cheddar, queijo mussarela, bacon, 2 ovos, alface, tomate e batata palha.</div>
-                    </div>
-                </div>
-                <div class="smallCard2">
-                    <div><img src="imagens/viuva.jpg" class="menuImagem" alt="Hamburguer inspirado na Víuva Negra"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>Víuva Negra</h2>
-                        </div>
-                        <div class="discText">Linda leve e solta. Hamburguer vegano com carne de soja, acompanhado
-                            de
-                            alface, tomate e ovo.</div>
-                    </div>
-                </div>
-
-                <div class="smallCard">
-                    <div><img src="imagens/ferro.jpg" class="menuImagem" alt="Hamburguer inspirado no Homem de Ferro"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>Homem de Ferro</h2>
-                        </div>
-                        <div class="discText">Empresario, filantropo ..... Hamburguer de carne de costela,
-                            cogumelos,
-                            cebola caramelizada, queijo prato, e batata palha.</div>
-                    </div>
-                </div>
-                <div class="smallCard2">
-                    <div><img src="imagens/thor.jpg" class="menuImagem" alt="Hamburguer inspirado no Thor"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>Thor</h2>
-                        </div>
-                        <div class="discText">O Deus loiro! 1 Bife de hamburguer feito com nosso blend especial da
-                            casa,
-                            quiejo cheddar em dobro, ovo, bacon, alface, tomate e batata palha.</div>
-                    </div>
-                </div>
-
-                <div class="smallCard">
-                    <div><img src="imagens/arqueiro.jpg" class="menuImagem" alt="Hamburguer inspirado no Gavião Arqueiro"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>Gavião Arqueiro</h2>
-                        </div>
-                        <div class="discText">A mira oerfeita para acabar com a sua fome. Hamburguer de Frango, queijo
-                            mussarela, ovo, alface, tomate e batata palha.</div>
-                    </div>
-                </div>
-                <div class="smallCard2">
-                    <div><img src="imagens/aranha.jpg" class="menuImagem" alt="Hamburguer inspirado no Capitão América"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>Homem Aranha</h2>
-                        </div>
-                        <div class="discText">O amigão da Vizinhaça. Hambuguer de Frango, queijo mussarela, ovo, bacon,
-                            alface, tomate e batata palha.</div>
-                    </div>
-                </div>
-                <div class="smallCard2">
-                    <div><img src="imagens/tnttangerina.jpg" class="menuImagem" alt="TNT sabor Tangerina"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>Tnt Tangerina</h2>
-                        </div>
-                        <div class="discText">O energético dos herois! Turbine sua energia na versão Tangerina.</div>
-                    </div>
-                </div>
-                <div class="smallCard">
-                    <div><img src="imagens/original.jpg" class="menuImagem" alt="TNT sabor Original"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>TNT Original</h2>
-                        </div>
-                        <div class="discText">O energético dos herois! Turbine sua energia na versão Original</div>
-                    </div>
-                </div>
-                <div class="smallCard2">
-                    <div><img src="imagens/macaverde.jpg" class="menuImagem" alt="TNT sabor Maça Verde"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>TNT Maça Verde</h2>
-                        </div>
-                        <div class="discText">O energético dos herois! Turbine sua energia na versão Maça Verde.</div>
-                    </div>
-                </div>
-                <div class="smallCard">
-                    <div><img src="imagens/acai.jfif" class="menuImagem" alt="TNT sabor Açai com Guarana"></div>
-                    <div class="descricao">
-                        <div>
-                            <h2>TNT Guarána com Açai</h2>
-                        </div>
-                        <div class="discText">O energético dos herois! Turbine sua energia na versão Guarána com Açai.
-                        </div>
-                    </div>
-                </div>
+            <div id='card' class="card" name='card'>
+                
             </div>
 
         </section>

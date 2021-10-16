@@ -11,15 +11,19 @@
     <link rel="stylesheet" type="text/css" href="css/indexStyle.css" />
     <link rel="stylesheet" type="text/css" href="css/carrousel.css" />
 
+
 </head>
 
 <body>
+
     <header>
+
         <!-- Cabeçalho com uma imagens e 2 listas para formatar os menus. -->
         <div class="flexContainer">
             <div id="divCenter"> <img src="imagens/hulk.gif" alt="Logo da Hulk's Burguer">
                 <!-- Lid separado a da outra lista para posicionamento -->
                 <div id="barra">
+
                     <ul>
                         <li>
                             <a href="index.html"> Login</a>
@@ -27,6 +31,7 @@
                         <li>
                             <a href="index.html">Registre-se</a>
                         </li>
+
                     </ul>
                 </div>
                 <nav>
@@ -35,6 +40,7 @@
                         <li id="cardapio"><a href="pagina2.html">Cardapio </a></li>
                         <li id="contato"><a href="pagina3.html">Pedido </a></li>
                     </ul>
+
                 </nav>
             </div>
         </div>
@@ -42,10 +48,12 @@
     <!-- Seção principal do site, dividida em partes -->
     <main>
         <section id="mainSection">
+            <a href="index.html"><img src="imagens/kart.png" id="kart"></a>
             <h1>Hulk's Burguer - Esmagando sua fome.</h1>
             <div class="card">
                 <div class="smallCard">
-                    <div><img src="imagens/cap.jpg" class="menuImagem" alt="Hamburguer insperado no capitão America"></div>
+                    <div><img src="imagens/cap.jpg" class="menuImagem" alt="Hamburguer insperado no capitão America">
+                    </div>
                     <div class="descricao">
                         <div>
                             <h2>Super Promoção da Semana</h2>
@@ -64,8 +72,9 @@
                 convidou seus amigos vingadores para se juntarem a ele na Hulk's Burguer, visite nosso cardapio e
                 conheço os lanches personalizados dos Vingadores. </div>
             <div class="textIndex">Estamos sempre pensando em você, conheça nosso cartão fidelidade.
-                <a class="button" href="#popup1">Conheça agora.</a>
+                
             </div>
+            <div id="divButton"><a class="button" href="#popup1">Conheça agora.</a></div>
             <div id="popup1" class="overlay">
                 <div class="popup">
                     <h2>Conheça nosso cartão fidelidade.</h2>
@@ -78,46 +87,21 @@
                 </div>
 
             </div>
-            <h3 id="h3Slider">Conheça nossos produtos:</h3>
-            <div class="sliderClass">
-                
-                <input type="radio" name="select" id="slide_1" checked>
-                <input type="radio" name="select" id="slide_2">
-                <input type="radio" name="select" id="slide_3">
-                <input type="radio" name="select" id="slide_4">
-                <input type="checkbox" id="slideImg">
 
-                <div class="slider">
-                    <label for="slide_1" class="slide slide_1"></label>
-                    <label for="slide_2" class="slide slide_2"></label>
-                    <label for="slide_3" class="slide slide_3"></label>
-                    <label for="slide_4" class="slide slide_4"></label>
-                </div>
-
-                <div class="parteInterna">
-                    <label for="slideImg" class="img">
-                        <img class="img_1" src="imagens/macaverde.jpg" alt="TNT Sabor Maça Verde">
-                    </label>
-                </div>
-
-                <div class="parteInterna">
-                    <label for="slideImg" class="img">
-                        <img class="img_2" src="imagens/original.jpg" alt="TNT Sabor Original">
-                    </label>
-                </div>
-
-                <div class="parteInterna">
-                    <label for="slideImg" class="img">
-                        <img class="img_3" src="imagens/acai.jfif" alt="TNT Sabor Açai com Guarána">
-                    </label>
-                </div>
-                <div class="parteInterna">
-                    <label for="slideImg" class="img">
-                        <img class="img_4" src="imagens/tnttangerina.jpg" alt="TNT Sabor Tangerina">
-                    </label>
-                </div>
+            <div id="slider">
+                <figure>
+                    <img src="imagens/aranha.jpg" alt>
+                    <img src="imagens/arqueiro.jpg" alt>
+                    <img src="imagens/ferro.jpg" alt>
+                    <img src="imagens/cap.jpg" alt>
+                    <img src="imagens/thor.jpg" alt>
+                    <img src="imagens/viuva.jpg" alt>
+                    <img src="imagens/macaverde.jpg" alt>
+                    <img src="imagens/original.jpg" alt>
+                    <img src="imagens/tnttangerina.jpg" alt>
+                    <img src="imagens/acai.jpg" alt>
+                </figure>
             </div>
-
         </section>
         <!-- Aside com os parceiros -->
         <aside>
@@ -128,7 +112,9 @@
             <img src="imagens/coca.png" alt="Logo Coca-Cola">
             <img src="imagens/pepsi-logo-vertical.png" alt="Logo Pepsi">
         </aside>
+
     </main>
+
     <!-- Footer com as informações basicas e links para as redes sociais -->
     <footer>
         <address>Rua Procelaria N91
@@ -140,9 +126,12 @@
             <section>Desenvolvido por Rodolpho Almeida</section>
         </section>
         <div id="navFooter">
-            <div><a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram-logo.png" alt="Logo Instagram"></a></div>
-            <div><a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png" alt="Logo Facebook"></a></div>
-            <div><a href="https://twitter.com/home" target="_blank"><img src="imagens/twitter.png" alt="Logo Twitter"></a></div>
+            <div><a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram-logo.png"
+                        alt="Logo Instagram"></a></div>
+            <div><a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png"
+                        alt="Logo Facebook"></a></div>
+            <div><a href="https://twitter.com/home" target="_blank"><img src="imagens/twitter.png"
+                        alt="Logo Twitter"></a></div>
         </div>
     </footer>
 </body>

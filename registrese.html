@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulk's Burguer</title>
+    <!-- Links para o CSS externo -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/formStyle.css" />
+    <script src="js/consultacep.js"></script>
+    <script src="json/usuarios.jsonc"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+</head>
+
+<body onload="caregar();">
+
+    <header>
+
+        <!-- Cabeçalho com uma imagens e 2 listas para formatar os menus. -->
+        <div class="flexContainer">
+            <div id="divCenter"> <img src="imagens/hulk.gif" alt="Logo da Hulk's Burguer">
+                <!-- Lid separado a da outra lista para posicionamento -->
+                <div id="barra">
+
+                    <ul>
+                        <li>
+                            <a href="index.html"> Login</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Registre-se</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <nav>
+                    <ul>
+                        <li id="home"><a href="index.html">Home </a></li>
+                        <li id="cardapio"><a href="pagina2.html">Cardapio </a></li>
+                        <li id="contato"><a href="pagina3.html">Pedido </a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Seção principal do site, dividida em partes -->
+    <main>
+        <section id="mainSection">
+            <a href="index.html"><img src="imagens/kart.png" id="kart"></a>
+            <form method="POST" action="" name="cadastro" onsubmit="return enviardados();">
+                <div class="card">
+                    <p>
+                      <!-- Formulario de cadastro foi separado do formulario de pedido. Campos referentes ao endereço bloqueados para digitação, as dados são preenchidos automaticamente pelo CEP -->  
+                    <h3>Cadastro:</h3>
+                    </p>
+                    <p>
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" placeholder="Digite seu nome completo">
+                    </p>
+                    <p>
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail">
+                    </p>
+                    <p>
+                        <label for="tel">Telefone: </label>
+                        <input type="tel" id="tel" placeholder="Digite seu telefone">
+                    </p>
+                    <p>
+                        <label for="date">Data de nascimento:</label>
+                        <input type="date" id="date">
+                    </p>
+                    <p><label for="cep">CEP:</label>
+                        <input type="text" id="cep" maxlength="9" onblur="consultaCep();">
+                    </p>
+                    <p>
+                        <label for="logradouro">Rua:</label>
+                        <input type="text" id="logradouro" disabled>
+                    </p>
+                    <p>
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero">
+                    </p>
+                    <p>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" disabled>
+                    </p>
+                    <p>
+                        <label for="localidade">Cidade:</label>
+                        <input type="text" id="localidade" disabled>
+                    </p>
+                    <p>
+                        <label for="uf">Estado:</label>
+                        <input type="text" id="uf" disabled>
+                    </p>
+                    <p>
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password">
+                    </p>
+                    <p>
+                        <label for="passwordCheck">Repita sua senha:</label>
+                        <input type="password" id="passwordCheck">
+                    </p>
+                    <p id="pButton">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </p>
+                </div>
+            </form>
+        </section>
+        <!-- Aside com os parceiros -->
+        <aside>
+            <h3 id="asideH3">Parceiros:</h3>
+            <img src="imagens/tnt.png" alt="Logo TNT">
+            <img src="imagens/grupopetropolis.jfif" alt="Logo Grupo Petropolis">
+            <img src="imagens/soulcode.jfif" alt="Logo SoulCode">
+            <img src="imagens/coca.png" alt="Logo Coca-Cola">
+            <img src="imagens/pepsi-logo-vertical.png" alt="Logo Pepsi">
+        </aside>
+
+    </main>
+
+    <!-- Footer com as informações basicas e links para as redes sociais -->
+    <footer>
+        <address>Rua Procelaria N91
+            São Conrado Vila Velha - ES
+            Tel:(27)99699-8347
+        </address>
+        <section id="sectionFooter">
+            <section>@Todos os direitos reservados. Hulk's Burguer</section>
+            <section>Desenvolvido por Rodolpho Almeida</section>
+        </section>
+        <div id="navFooter">
+            <div><a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram-logo.png"
+                        alt="Logo Instagram"></a></div>
+            <div><a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png"
+                        alt="Logo Facebook"></a></div>
+            <div><a href="https://twitter.com/home" target="_blank"><img src="imagens/twitter.png"
+                        alt="Logo Twitter"></a></div>
+        </div>
+    </footer>
+</body>
+
+</html>

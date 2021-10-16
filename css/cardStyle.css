@@ -10,18 +10,19 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 10px;
+    padding-left: 15%;
     padding-right: 10px;
     display: table;
     top: 0;
     box-sizing: border-box;
     font-size: 100%;
+    
 }
 /* Estilos para o Card interno dos lanches. 2 Para controlar o alinhamento direito-esquerdo */
 .smallCard {
     float: left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 49%;
+    width: 90%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -29,17 +30,8 @@
     margin: auto;
     box-sizing: border-box;
     height: auto;
-}
-.smallCard2 {
-    float: right;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 49%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: auto;
-    box-sizing: border-box;
+    text-align: center;
+    font-weight: bolder;
 }
 /* Estilos para a imagem do Card */
 .menuImagem{
@@ -53,11 +45,13 @@
     text-align: center;
     margin-top: auto;
     vertical-align: top;
+    white-space: pre;
 }
-h2:only-child{
+h2{
     color: #991717;
     margin: auto;
     margin-top: auto;
+    text-align: center;
 }
 h1{
     color: #991717;
@@ -68,6 +62,16 @@ h1{
   text-align: justify;
   font-size: 90%;
   font-weight: bold;
+}
+button[type=submit], button[type=reset] {
+    background-color: rgb(3, 68, 3);
+    border: none;
+    color: white;
+    padding: 6px 6px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 

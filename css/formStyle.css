@@ -53,3 +53,9 @@ label {
 h1, h2, h3 {
     color: #991717;
 }
+#pButton{
+    border-style: dotted;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}

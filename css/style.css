@@ -1,67 +1,77 @@
 /* Flex Container para organizar o Header*/
-.flexContainer{
+
+.flexContainer {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     margin: auto;
-    box-sizing: border-box; 
-    height: auto;  
+    box-sizing: border-box;
+    height: auto;
 }
-body{
+
+body {
     background-image: url(../imagens/4486964.jpg);
 }
+
 /* Controles de media para responsividade */
- @media  (max-width: 650px) {
-    #divCenter{
+/* CAinda estou com um pouco de dificuldade nessa parte, espero que BootStrap facilite um pouco as coisas
+qualquer sujestão sobre esses pontos serão bem vindos! */
+
+@media (max-width: 650px) {
+    #divCenter {
         transform: scaleX(1);
     }
     header {
         transform: scaleX(1);
     }
-    ul{
+    ul {
         font-size: 25%;
     }
-    nav{
+    nav {
         padding-top: 13px;
     }
-    #sectionFooter{
+    #sectionFooter {
         font-size: 50%;
     }
-    address{
+    address {
         font-size: 50%;
     }
-    footer{
+    footer {
         transform: scaleY(1);
     }
-    main{
+    main {
         transform: scaleX(1);
     }
     #mainSection {
         transform: scaleY(1);
         font-size: 50%;
     }
-    h2{
+    h2 {
         font-size: 50%;
     }
 }
-body{
+
+body {
     width: 80%;
     margin: auto;
 }
+
 /* Controles da Div de dentro do header, incluindo a imagem*/
-#divCenter{
+
+#divCenter {
     width: 100%;
     height: auto;
     position: relative;
-    
 }
-#divCenter img{
+
+#divCenter img {
     width: 100%;
     height: auto;
-
 }
+
 /* Contorles da barra com o menu superior de login e registro */
-div#barra{
+
+div#barra {
     margin: 0;
     width: 100%;
     height: auto;
@@ -70,8 +80,10 @@ div#barra{
     top: 0;
     right: 0;
 }
+
 /* Contorles da barra com o menu inferior com o menu */
-nav{
+
+nav {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -81,14 +93,24 @@ nav{
     position: absolute;
     bottom: 45px;
 }
+#kart{
+    display: flex;
+    width: 5%;
+    z-index: 3;
+    float: right;
+    margin-top: -02.3%;
+}
+
 a {
     color: rgb(3, 68, 3);
     font-weight: bolder;
     text-decoration: none;
-    font-family:cursive;
+    font-family: cursive;
 }
+
 /* Estilos para a Li para colocar o fundo de tijolos */
-li{
+
+li {
     display: inline-table;
     /* color: rgb(2, 37, 2); */
     font-weight: bolder;
@@ -99,92 +121,307 @@ li{
     /* background-image: url(../imagens/tijolo.jpg); */
     background-size: cover;
 }
+
+
+
 a:hover {
     color: rgb(255, 255, 255);
     font-weight: bolder;
-  }
-ul{
+}
+
+ul {
     margin: 0;
     width: 100%;
     height: auto;
     text-align: right;
     box-sizing: border-box;
 }
-main{
+
+main {
     background-color: white;
     height: auto;
     display: flex;
-    margin-top:-10px;
+    margin-top: -10px;
     top: 0;
     display: flex;
     flex-wrap: wrap;
 }
+
 /* Estilo da area central */
-#mainSection{
+
+#mainSection {
     background-color: rgb(241, 245, 220);
     height: auto;
     width: 80%;
     padding-top: 20px;
     top: 0;
 }
-h3{
+
+h3 {
     padding-bottom: 20px;
 }
+
 /* Estilos para o Aside */
-aside{
+
+aside {
     padding-top: 2%;
     background-color: rgb(16, 61, 4);
     height: auto;
     display: flex;
     width: 20%;
     display: list-item;
-    list-style:none ;
+    list-style: none;
     padding-left: 05%;
     box-sizing: border-box;
 }
-aside img{
+
+aside img {
     width: 80%;
     height: auto;
     margin-bottom: 15%;
 }
-#asideH3{
+
+#asideH3 {
     margin: 0;
     color: blanchedalmond;
 }
+
 /* Estilos para o footer */
-footer{
+
+footer {
     background-color: #e1be2e;
     height: 100px;
     box-sizing: border-box;
     display: flex;
     margin: 0;
 }
-address{
+
+address {
     padding-left: 10px;
     display: flex;
     width: 40%;
     height: auto;
     text-align: center;
     margin: auto;
-
 }
-#sectionFooter{
+
+#sectionFooter {
     width: 40%;
     height: auto;
     text-align: center;
     margin: auto;
-
 }
-#navFooter{
+
+#navFooter {
     margin: auto;
     width: 20%;
     height: auto;
     text-align: right;
     box-sizing: border-box;
     display: list-item;
-    list-style:none ;
+    list-style: none;
 }
-#navFooter img{
+
+#navFooter img {
     width: 10%;
     height: auto;
+}
+
+@media (max-width: 1220px) {
+    a {
+        color: rgb(3, 68, 3);
+        font-weight: bolder;
+        text-decoration: none;
+        font-family: cursive;
+    }
+    /* Estilos para a Li para colocar o fundo de tijolos */
+    li {
+        display: inline-table;
+        /* color: rgb(2, 37, 2); */
+        font-weight: bolder;
+        font-size: 100%;
+        padding-right: 10px;
+        transition-duration: 0.4s;
+        padding-left: 10px;
+        /* background-image: url(../imagens/tijolo.jpg); */
+        background-size: cover;
+    }
+
+    a:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+    }
+    ul {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        text-align: right;
+        box-sizing: border-box;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: auto;
+        flex-direction: column;
+        transform: translateY(+100%);
+        position: absolute;
+        bottom: 27px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 75%;
+    }
+    a {
+        color: rgb(3, 68, 3);
+        font-weight: bolder;
+        text-decoration: none;
+        font-family: cursive;
+    }
+    /* Estilos para a Li para colocar o fundo de tijolos */
+    li {
+        display: inline-table;
+        /* color: rgb(2, 37, 2); */
+        font-weight: bolder;
+        font-size: 100%;
+        padding-right: 10px;
+        transition-duration: 0.4s;
+        padding-left: 10px;
+        /* background-image: url(../imagens/tijolo.jpg); */
+        background-size: cover;
+    }
+    a:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+    }
+    ul {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        text-align: right;
+        box-sizing: border-box;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: auto;
+        flex-direction: column;
+        transform: translateY(+100%);
+        position: absolute;
+        bottom: 35px;
+    }
+    footer {
+        height: auto;
+    }
+}
+
+@media (max-width: 440px) {
+    body {
+        font-size: 55%;
+    }
+    main {
+        background-color: chocolate;
+    }
+    footer {
+        height: auto;
+    }
+    #divCenter {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 02.5%;
+    }
+    
+    #divCenter img {
+        width: 100%;
+        height: auto;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: auto;
+        flex-direction: column;
+        transform: translateY(+100%);
+        position: absolute;
+        bottom: 25px;
+    }
+    li {
+        display: inline-table;
+        font-weight: bolder;
+        font-size: 100%;
+        margin-left: -15px;
+        transition-duration: 0.4s;
+        
+    }
+    a {
+        color: rgb(3, 68, 3);
+        font-weight: bolder;
+        text-decoration: none;
+        font-family: cursive;
+    }
+    ul {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        text-align: right;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 440px) {
+    body {
+        font-size: 40%;
+    }
+    main {
+        background-color: chocolate;
+    }
+    footer {
+        height: auto;
+    }
+    #divCenter {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 03.6%;
+    }
+    
+    #divCenter img {
+        width: 100%;
+        height: auto;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: auto;
+        flex-direction: column;
+        transform: translateY(+100%);
+        position: absolute;
+        bottom: 23px;
+    }
+    li {
+        display: inline-table;
+        font-weight: bolder;
+        font-size: 100%;
+        margin-left: -15px;
+        transition-duration: 0.4s;
+        margin-right: -2%;
+        
+    }
+    a {
+        color: rgb(3, 68, 3);
+        font-weight: bolder;
+        text-decoration: none;
+        font-family: cursive;
+    }
+    ul {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        text-align: right;
+        box-sizing: border-box;
+    }
 }
